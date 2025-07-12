@@ -1,0 +1,11 @@
+{
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true,
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "useTabs": false,
+  "endOfLine": "lf"
+}

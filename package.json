@@ -7,15 +7,44 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint --ext .ts,.vue,.js,.mjs --ignore-pattern .gitignore . --fix",
+    "format": "prettier . --write",
+    "lint-format": "npm run lint && npm run format"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
+    "@primeuix/themes": "^1.1.1",
+    "@primevue/forms": "^4.3.5",
     "@nuxt/eslint": "^1.5.2",
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/test-utils": "^3.19.2",
     "eslint": "^9.31.0",
     "nuxt": "^3.17.6",
     "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "dayjs": "^1.11.13",
+    "sass": "^1.89.1",
+    "sass-loader": "^16.0.5",
+    "tailwindcss": "^4.1.8",
+    "tailwindcss-primeui": "^0.6.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.5"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "@primevue/nuxt-module": "^4.3.5",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "vue-tsc": "^2.2.10"
+  },
+  "volta": {
+    "node": "22.16.0"
   }
 }
