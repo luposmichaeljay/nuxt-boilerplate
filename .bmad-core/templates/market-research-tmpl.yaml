@@ -5,24 +5,24 @@ template:
   output:
     format: markdown
     filename: docs/market-research.md
-    title: "Market Research Report: {{project_product_name}}"
+    title: 'Market Research Report: {{project_product_name}}'
 
 workflow:
   mode: interactive
   elicitation: advanced-elicitation
   custom_elicitation:
-    title: "Market Research Elicitation Actions"
+    title: 'Market Research Elicitation Actions'
     options:
-      - "Expand market sizing calculations with sensitivity analysis"
-      - "Deep dive into a specific customer segment"
-      - "Analyze an emerging market trend in detail"
-      - "Compare this market to an analogous market"
-      - "Stress test market assumptions"
-      - "Explore adjacent market opportunities"
-      - "Challenge market definition and boundaries"
-      - "Generate strategic scenarios (best/base/worst case)"
-      - "If only we had considered [X market factor]..."
-      - "Proceed to next section"
+      - 'Expand market sizing calculations with sensitivity analysis'
+      - 'Deep dive into a specific customer segment'
+      - 'Analyze an emerging market trend in detail'
+      - 'Compare this market to an analogous market'
+      - 'Stress test market assumptions'
+      - 'Explore adjacent market opportunities'
+      - 'Challenge market definition and boundaries'
+      - 'Generate strategic scenarios (best/base/worst case)'
+      - 'If only we had considered [X market factor]...'
+      - 'Proceed to next section'
 
 sections:
   - id: executive-summary
@@ -104,7 +104,7 @@ sections:
         repeatable: true
         sections:
           - id: segment
-            title: "Segment {{segment_number}}: {{segment_name}}"
+            title: 'Segment {{segment_number}}: {{segment_name}}'
             template: |
               - **Description:** {{brief_overview}}
               - **Size:** {{number_of_customers_market_value}}
@@ -130,7 +130,7 @@ sections:
         instruction: Map the end-to-end customer experience for primary segments
         template: |
           For primary customer segment:
-          
+
           1. **Awareness:** {{discovery_process}}
           2. **Consideration:** {{evaluation_criteria}}
           3. **Purchase:** {{decision_triggers}}
@@ -173,20 +173,20 @@ sections:
         instruction: Analyze each force with specific evidence and implications
         sections:
           - id: supplier-power
-            title: "Supplier Power: {{power_level}}"
-            template: "{{analysis_and_implications}}"
+            title: 'Supplier Power: {{power_level}}'
+            template: '{{analysis_and_implications}}'
           - id: buyer-power
-            title: "Buyer Power: {{power_level}}"
-            template: "{{analysis_and_implications}}"
+            title: 'Buyer Power: {{power_level}}'
+            template: '{{analysis_and_implications}}'
           - id: competitive-rivalry
-            title: "Competitive Rivalry: {{intensity_level}}"
-            template: "{{analysis_and_implications}}"
+            title: 'Competitive Rivalry: {{intensity_level}}'
+            template: '{{analysis_and_implications}}'
           - id: threat-new-entry
-            title: "Threat of New Entry: {{threat_level}}"
-            template: "{{analysis_and_implications}}"
+            title: 'Threat of New Entry: {{threat_level}}'
+            template: '{{analysis_and_implications}}'
           - id: threat-substitutes
-            title: "Threat of Substitutes: {{threat_level}}"
-            template: "{{analysis_and_implications}}"
+            title: 'Threat of Substitutes: {{threat_level}}'
+            template: '{{analysis_and_implications}}'
       - id: adoption-lifecycle
         title: Technology Adoption Lifecycle Stage
         instruction: |
@@ -204,7 +204,7 @@ sections:
         repeatable: true
         sections:
           - id: opportunity
-            title: "Opportunity {{opportunity_number}}: {{name}}"
+            title: 'Opportunity {{opportunity_number}}: {{name}}'
             template: |
               - **Description:** {{what_is_the_opportunity}}
               - **Size/Potential:** {{quantified_potential}}

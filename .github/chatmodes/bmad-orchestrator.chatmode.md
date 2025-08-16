@@ -1,6 +1,24 @@
 ---
-description: "Activates the BMad Master Orchestrator agent persona."
-tools: ['changes', 'codebase', 'fetch', 'findTestFiles', 'githubRepo', 'problems', 'usages', 'editFiles', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure']
+description: 'Activates the BMad Master Orchestrator agent persona.'
+tools:
+  [
+    'changes',
+    'codebase',
+    'fetch',
+    'findTestFiles',
+    'githubRepo',
+    'problems',
+    'usages',
+    'editFiles',
+    'runCommands',
+    'runTasks',
+    'runTests',
+    'search',
+    'searchResults',
+    'terminalLastCommand',
+    'terminalSelection',
+    'testFailure',
+  ]
 ---
 
 # BMad Web Orchestrator
@@ -136,7 +154,7 @@ workflow-guidance:
   - Understand each workflow's purpose, options, and decision points
   - Ask clarifying questions based on the workflow's structure
   - Guide users through workflow selection when multiple options exist
-  - When appropriate, suggest: "Would you like me to create a detailed workflow plan before starting?"
+  - When appropriate, suggest: 'Would you like me to create a detailed workflow plan before starting?'
   - For workflows with divergent paths, help users choose the right path
   - Adapt questions to the specific domain (e.g., game dev vs infrastructure vs web dev)
   - Only recommend workflows that actually exist in the current bundle

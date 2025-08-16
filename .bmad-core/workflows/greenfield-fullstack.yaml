@@ -36,7 +36,7 @@ workflow:
       creates: v0_prompt (optional)
       requires: front-end-spec.md
       condition: user_wants_ai_generation
-      notes: "OPTIONAL BUT RECOMMENDED: Generate AI UI prompt for tools like v0, Lovable, etc. Use the generate-ai-frontend-prompt task. User can then generate UI in external tool and download project structure."
+      notes: 'OPTIONAL BUT RECOMMENDED: Generate AI UI prompt for tools like v0, Lovable, etc. Use the generate-ai-frontend-prompt task. User can then generate UI in external tool and download project structure.'
 
     - agent: architect
       creates: fullstack-architecture.md
@@ -52,26 +52,26 @@ workflow:
       updates: prd.md (if needed)
       requires: fullstack-architecture.md
       condition: architecture_suggests_prd_changes
-      notes: "If architect suggests story changes, update PRD and re-export the complete unredacted prd.md to docs/ folder."
+      notes: 'If architect suggests story changes, update PRD and re-export the complete unredacted prd.md to docs/ folder.'
 
     - agent: po
       validates: all_artifacts
       uses: po-master-checklist
-      notes: "Validates all documents for consistency and completeness. May require updates to any document."
+      notes: 'Validates all documents for consistency and completeness. May require updates to any document.'
 
     - agent: various
       updates: any_flagged_documents
       condition: po_checklist_issues
-      notes: "If PO finds issues, return to relevant agent to fix and re-export updated documents to docs/ folder."
+      notes: 'If PO finds issues, return to relevant agent to fix and re-export updated documents to docs/ folder.'
 
     - project_setup_guidance:
       action: guide_project_structure
       condition: user_has_generated_ui
-      notes: "If user generated UI with v0/Lovable: For polyrepo setup, place downloaded project in separate frontend repo alongside backend repo. For monorepo, place in apps/web or packages/frontend directory. Review architecture document for specific guidance."
+      notes: 'If user generated UI with v0/Lovable: For polyrepo setup, place downloaded project in separate frontend repo alongside backend repo. For monorepo, place in apps/web or packages/frontend directory. Review architecture document for specific guidance.'
 
     - development_order_guidance:
       action: guide_development_sequence
-      notes: "Based on PRD stories: If stories are frontend-heavy, start with frontend project/directory first. If backend-heavy or API-first, start with backend. For tightly coupled features, follow story sequence in monorepo setup. Reference sharded PRD epics for development order."
+      notes: 'Based on PRD stories: If stories are frontend-heavy, start with frontend project/directory first. If backend-heavy or API-first, start with backend. For tightly coupled features, follow story sequence in monorepo setup. Reference sharded PRD epics for development order.'
 
     - agent: po
       action: shard_documents
@@ -159,7 +159,7 @@ workflow:
       notes: |
         All stories implemented and reviewed!
         Project development phase complete.
-        
+
         Reference: .bmad-core/data/bmad-kb.md#IDE Development Workflow
 
   flow_diagram: |
@@ -230,11 +230,11 @@ workflow:
       - Enterprise or customer-facing applications
 
   handoff_prompts:
-    analyst_to_pm: "Project brief is complete. Save it as docs/project-brief.md in your project, then create the PRD."
-    pm_to_ux: "PRD is ready. Save it as docs/prd.md in your project, then create the UI/UX specification."
-    ux_to_architect: "UI/UX spec complete. Save it as docs/front-end-spec.md in your project, then create the fullstack architecture."
-    architect_review: "Architecture complete. Save it as docs/fullstack-architecture.md. Do you suggest any changes to the PRD stories or need new stories added?"
-    architect_to_pm: "Please update the PRD with the suggested story changes, then re-export the complete prd.md to docs/."
-    updated_to_po: "All documents ready in docs/ folder. Please validate all artifacts for consistency."
-    po_issues: "PO found issues with [document]. Please return to [agent] to fix and re-save the updated document."
-    complete: "All planning artifacts validated and saved in docs/ folder. Move to IDE environment to begin development."
+    analyst_to_pm: 'Project brief is complete. Save it as docs/project-brief.md in your project, then create the PRD.'
+    pm_to_ux: 'PRD is ready. Save it as docs/prd.md in your project, then create the UI/UX specification.'
+    ux_to_architect: 'UI/UX spec complete. Save it as docs/front-end-spec.md in your project, then create the fullstack architecture.'
+    architect_review: 'Architecture complete. Save it as docs/fullstack-architecture.md. Do you suggest any changes to the PRD stories or need new stories added?'
+    architect_to_pm: 'Please update the PRD with the suggested story changes, then re-export the complete prd.md to docs/.'
+    updated_to_po: 'All documents ready in docs/ folder. Please validate all artifacts for consistency.'
+    po_issues: 'PO found issues with [document]. Please return to [agent] to fix and re-save the updated document.'
+    complete: 'All planning artifacts validated and saved in docs/ folder. Move to IDE environment to begin development.'
