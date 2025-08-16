@@ -11,10 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   fonts: {
-    families: [
-      { name: 'Inter', provider: 'google' },
-      { name: 'Roboto', provider: 'google' },
-    ],
+    families: [{ name: 'Montserrat', provider: 'google' }],
   },
   primevue: {
     importTheme: { from: '~/theme.ts' },
