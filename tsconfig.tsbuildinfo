@@ -1,1 +1,1 @@
-{"root":["./app.vue","./eslint.config.mjs","./nuxt.config.ts","./tailwind.config.ts","./theme.ts","./pages/index.vue","./.nuxt/nuxt.d.ts"],"version":"5.8.3"}
+{"root":["./app.vue","./eslint.config.mjs","./nuxt.config.ts","./tailwind.config.ts","./theme.ts","./components/auth/loginform.vue","./components/auth/registerform.vue","./components/auth/resetpasswordform.vue","./pages/index.vue","./.nuxt/nuxt.d.ts"],"version":"5.8.3"}
