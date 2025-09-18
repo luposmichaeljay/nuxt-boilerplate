@@ -1,1 +1,1 @@
-{"root":["./.nuxt/nuxt.d.ts","./eslint.config.mjs","./nuxt.config.ts","./tailwind.config.ts","./theme.ts","./app/app.vue","./app/pages/index.vue","./.nuxt/nuxt.node.d.ts"],"version":"5.8.3"}
+{"root":["./.nuxt/nuxt.d.ts","./app/app.vue","./app/pages/index.vue","./.nuxt/nuxt.node.d.ts","./nuxt.config.ts"],"version":"5.8.3"}
