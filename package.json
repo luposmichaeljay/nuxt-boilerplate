@@ -20,7 +20,7 @@
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/test-utils": "^3.19.2",
-    "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.11.2",
     "@primeuix/themes": "^1.2.3",
     "@primevue/forms": "^4.3.9",
@@ -32,7 +32,7 @@
     "primevue": "^4.3.9",
     "sass": "^1.92.1",
     "sass-loader": "^16.0.5",
-    "tailwindcss": "^4.1.13",
+    "tailwindcss": "^3.4.19",
     "tailwindcss-primeui": "^0.6.1",
     "vue": "^3.5.21",
     "vue-router": "^4.5.1",
@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@primevue/nuxt-module": "^4.3.9",
+    "@tailwindcss/forms": "^0.5.10",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "husky": "^9.1.7",
@@ -49,6 +50,6 @@
     "vue-tsc": "^3.0.6"
   },
   "volta": {
-    "node": "22.16.0"
+    "node": "24.0.0"
   }
 }

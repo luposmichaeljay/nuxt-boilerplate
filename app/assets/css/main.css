@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #142210;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c3928;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #46ec13;
+}
+
+/* Force dark mode for PrimeVue */
+html {
+  color-scheme: dark;
+}
